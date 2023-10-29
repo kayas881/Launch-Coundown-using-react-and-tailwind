@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&family=Space+Grotesk:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+* {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+    background-color: hsl(235, 16%, 14%);
+}
+
+.socials ul li {
+    margin: 0 20px
+}
+
+.countdown div {
+    margin: 10px;
+}
+.countdown p {
+    background-color: hsl(236, 21%, 26%);
+    color: hsl(345, 95%, 68%);
+    font-size: 46px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+
+}
+.countdown h3 {
+    color: hsl(237, 18%, 59%);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+@media (min-width: 1600px) {
+    .stars img, 
+    .hills img {
+        width: 1920px;
+    }
+}
+
+@media (max-width: 767px) {
+    .countdown p {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .countdown h3 {
+        font-size: 10px; /* Adjust font size for smaller screens */
+        letter-spacing: 3px; /* Adjust letter spacing for smaller screens */
+        margin-top: 8px; /* Adjust margin for smaller screens */
+    }
+    .stars img
+     {
+        width: 100%; /* Make the hills image take the full width of the container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+}
